@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="aadhar-container">
+        <div class="container"></div>
+        <h2>Aadhaar Login</h2>
+        <div class="description">Select 12 digit Aadhaar Number / Smart Name</div>
+        <p class="error-message" id="error-message" style="display: none;">Error message here</p>
+        <form id="aadhaar-login-form">
+            <div class="input-group">
+                <input
+                    id="aadhaarNumber"
+                    type="text"
+                    placeholder="Enter Aadhaar Number"
+                    required
+                />
+            </div>
+            <div class="input-group">
+                <input
+                    id="mobileNumber"
+                    type="text"
+                    placeholder="Enter Mobile Number"
+                    required
+                />
+            </div>
+            <div class="input-group" id="otp-input-group" style="display: none;">
+                <input
+                    id="otp"
+                    type="text"
+                    placeholder="Enter OTP"
+                />
+            </div>
+            <button type="submit" id="submit-button">Send OTP</button>
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
